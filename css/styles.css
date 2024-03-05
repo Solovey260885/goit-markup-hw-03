@@ -41,11 +41,17 @@ ul {
 }
 
 .container {
-  max-width: 1128px;
+  max-width: 1158px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* header */
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -99,7 +105,12 @@ ul {
 
 .solutions {
   background-color: #2e2f42;
+  padding: 181px 0 181px 0;
 }
+
+/* .solution-wrap {
+  padding: 181px 0 181px 0;
+} */
 .title {
   font-weight: 700;
   font-size: 56px;
@@ -107,6 +118,8 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
+  margin: 0 auto;
 }
 .btn {
   font-family: "Roboto", sans-serif;
@@ -117,6 +130,12 @@ ul {
   color: #fff;
   background: #4d5ae5;
   cursor: pointer;
+
+  border-radius: 4px;
+  padding: 16px;
+  width: 169px;
+  height: 56px;
+  margin-top: 48px;
 }
 
 .btn:hover {
@@ -127,6 +146,15 @@ ul {
 }
 
 /* Progress */
+.progress {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* .progres-wrap {
+  padding-top: 120px;
+  padding-bottom: 120px;
+} */
 .progress-title {
   font-weight: 500;
   font-size: 20px;
@@ -146,7 +174,14 @@ ul {
 
 .team {
   background: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
+/* .team-wraper {
+  padding-top: 120px;
+  padding-bottom: 120px;
+} */
 
 .title-team {
   font-weight: 700;
@@ -156,7 +191,9 @@ ul {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  background-color: #ffffff;
+  max-width: 162px;
+  margin: 0 auto;
+  margin-bottom: 72px;
 }
 .team-item {
   background-color: #ffffff;
@@ -168,6 +205,8 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 .team-text {
   font-weight: 400;
@@ -180,6 +219,11 @@ ul {
 
 /* Portfolio */
 
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -188,13 +232,23 @@ ul {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  width: 218px;
+  margin: 0 auto;
+  margin-bottom: 72px;
 }
+
+/* .portfolio-wrap {
+  padding-top: 120px;
+  padding-bottom: 120px;
+} */
 .portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -210,6 +264,13 @@ ul {
 .footer {
   background-color: #2e2f42;
 }
+
+.footer-wrap {
+  max-width: 264px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -228,4 +289,5 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  margin-top: 16px;
 }
