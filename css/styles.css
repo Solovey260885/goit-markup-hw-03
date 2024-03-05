@@ -2,12 +2,47 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background: #fff;
+  max-width: 1440px;
+  margin: 0 auto;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 a {
   text-decoration: none;
 }
 ul {
   list-style-type: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
 }
 
 /* header */
@@ -59,6 +94,7 @@ ul {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 /* section solution */
 
 .solutions {
@@ -89,6 +125,8 @@ ul {
 .btn:focus {
   background: #404bbf;
 }
+
+/* Progress */
 .progress-title {
   font-weight: 500;
   font-size: 20px;
@@ -103,6 +141,9 @@ ul {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+/* Team */
+
 .team {
   background: #f4f4fd;
 }
@@ -136,6 +177,9 @@ ul {
   text-align: center;
   color: #434455;
 }
+
+/* Portfolio */
+
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -160,7 +204,9 @@ ul {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 /* Footer */
+
 .footer {
   background-color: #2e2f42;
 }
