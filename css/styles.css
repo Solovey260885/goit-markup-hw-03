@@ -47,10 +47,17 @@ ul {
   padding-right: 15px;
 }
 
-/* header */
+/*-----------========= header ========----------*/
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
+.cont-header {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -61,10 +68,17 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 .color-logo {
   color: #2e2f42;
 }
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
 .nav-item:hover {
   color: #404bbf;
 }
@@ -75,6 +89,10 @@ ul {
 
 .nav-item:active {
   text-decoration: underline;
+}
+
+.contact {
+  margin-left: auto;
 }
 .contact-link:hover {
   color: #404bbf;
@@ -89,9 +107,17 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  display: block;
+  margin: 24px 0;
 }
 .contact {
   font-style: normal;
+}
+
+.contact-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 .contact-link {
   font-weight: 400;
@@ -101,16 +127,22 @@ ul {
   color: #434455;
 }
 
-/* section solution */
+/*-----------========= solutions ========----------*/
 
 .solutions {
   background-color: #2e2f42;
   padding: 181px 0 181px 0;
 }
 
-/* .solution-wrap {
-  padding: 181px 0 181px 0;
-} */
+.solution-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.solution-wrap {
+  max-width: 496px;
+}
 .title {
   font-weight: 700;
   font-size: 56px;
@@ -119,7 +151,7 @@ ul {
   text-align: center;
   color: #fff;
   max-width: 496px;
-  margin: 0 auto;
+  justify-content: center;
 }
 .btn {
   font-family: "Roboto", sans-serif;
@@ -135,7 +167,13 @@ ul {
   padding: 16px;
   width: 169px;
   height: 56px;
+
+  margin: 0 auto;
   margin-top: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn:hover {
@@ -145,22 +183,31 @@ ul {
   background: #404bbf;
 }
 
-/* Progress */
+/*-----------========= progress ========----------*/
 .progress {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
-/* .progres-wrap {
-  padding-top: 120px;
-  padding-bottom: 120px;
-} */
+.progres-wrap {
+}
+
+.progress-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
 .progress-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
+}
+.progress-list-item {
+  max-width: 264px;
 }
 .progress-text {
   font-weight: 400;
@@ -170,7 +217,7 @@ ul {
   color: #434455;
 }
 
-/* Team */
+/*-----------========= team ========----------*/
 
 .team {
   background: #f4f4fd;
@@ -178,10 +225,8 @@ ul {
   padding-bottom: 120px;
 }
 
-/* .team-wraper {
-  padding-top: 120px;
-  padding-bottom: 120px;
-} */
+.team-wraper {
+}
 
 .title-team {
   font-weight: 700;
@@ -191,12 +236,20 @@ ul {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  max-width: 162px;
+  max-width: 163px;
   margin: 0 auto;
   margin-bottom: 72px;
 }
 .team-item {
+  max-width: 264px;
   background-color: #ffffff;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.team-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 .team-subtitle {
   font-weight: 500;
@@ -215,14 +268,18 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-bottom: 32px;
 }
 
-/* Portfolio */
+/*-----------========= portfolio ========----------*/
 
 .portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+/* .portfolio-wrap {
+  width: calc((100% - 9px) / 3);
+} */
 
 .portfolio-title {
   font-weight: 700;
@@ -232,15 +289,15 @@ ul {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  width: 218px;
+  width: 220px;
   margin: 0 auto;
   margin-bottom: 72px;
 }
-
-/* .portfolio-wrap {
-  padding-top: 120px;
-  padding-bottom: 120px;
-} */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 .portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -249,6 +306,12 @@ ul {
   color: #2e2f42;
   margin-top: 32px;
   margin-bottom: 8px;
+  margin-left: 16px;
+}
+
+.portfolio-item {
+  border: 1px solid #e7e9fc;
+  width: 360px;
 }
 
 .portfolio-text {
@@ -257,9 +320,11 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-left: 16px;
+  margin-bottom: 32px;
 }
 
-/* Footer */
+/*-----------========= footer ========----------*/
 
 .footer {
   background-color: #2e2f42;
